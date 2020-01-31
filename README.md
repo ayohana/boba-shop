@@ -16,13 +16,12 @@
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **Homepage** | User accesses index.html | Homepage with user input form |
-| **Program Gathers User Input for a Topping** | `Checked Checkbox:` "Tapioca Pearls" | `Console:` "Tapioca Pearls" |
-| **Program Gathers User Input for Multiple Toppings** | `Checked Checkbox:` "Tapioca Pearls", "Egg pudding" | `Console:` "Tapioca Pearls", "Egg pudding" |
-| **Program Displays the Return Output of Toppings** | `Checked Checkbox:` "Tapioca Pearls", "Egg pudding" | "Tapioca Pearls", "Egg pudding" |
-| **Program Gathers User Input for a Size**| `Checked Radio:` "Small" | `Console:` "Small" |
-| **Program Displays the Return Output of a Size**| `Checked Radio:` "Small" | "Small" |
-| **Program Saves a Drink Order in a Constructor**| `Checked Checkbox:` "Tapioca Pearls" <br> `Checked Radio:` "Small" | `Console:` testDrink = {<br>toppings: ["Tapioca Pearls"], <br>size: "Small"<br>} |
-| **Program Displays the Estimated Price Before Checkout"**| `Checked Checkbox:` "Tapioca Pearls" <br> `Checked Radio:` "Small" | "$3.50" |
+| **Program Gathers User Input for a Topping** | `Checked Checkbox:` <br> "Tapioca Pearls" | `Console:` <br> "Tapioca Pearls" |
+| **Program Gathers User Input for Multiple Toppings** | `Checked Checkbox:` <br> "Tapioca Pearls", "Egg pudding" | `Console:` <br> "Tapioca Pearls", "Egg pudding" |
+| **Program Gathers User Input for Size**| `Checked Radio:` <br> "Small" | `Console:` <br> "Small" |
+| **Program Saves a Drink Order in a Constructor**| `Checked Checkbox:` <br> "Tapioca Pearls" <br> `Checked Radio:` <br> "Small" | `Console:` <br> testDrink = {<br>toppings: ["Tapioca Pearls"], <br>size: "Small"<br>} |
+| **Program Calculates Price of a Drink Size with Toppings**| `Checked Checkbox:` <br> "Tapioca Pearls" <br> `Checked Radio:` <br> "Small" | `Console:` <br> "$3.50" |
+| **Program Displays the Estimated Price Before Checkout"**| `Checked Checkbox:` <br> "Tapioca Pearls" <br> `Checked Radio:` <br> "Small" | "$3.50" |
 | **Program Confirms Items and Price on Checkout**| `Clicked Button:` "Checkout" | "Order Confirmation: A Small milk tea with Tapioca Pearls. Total = $3.50" |
 </details>
 
