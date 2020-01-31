@@ -6,7 +6,10 @@
 
 ## Description
 
-**This website is for a boba (aka _bubble tea_) company.** A user can choose one or more individual toppings (tapioca pearls, coffee jelly, egg pudding, etc) and a size to order a boba drink and see the final cost.
+**This website is for a boba (aka _bubble tea_) company.** A user can choose one or more individual toppings (tapioca pearls, coffee jelly, egg pudding, etc) and a size to order a boba drink and see the final cost. The pricing is as follows:
+
+* +¢50 per topping
+* +¢50 for Medium and +$1 for Large
 
 ## Specs
 
@@ -20,7 +23,7 @@
 | **Program Gathers User Input for Multiple Toppings** | `Checked Checkbox:` <br> "Tapioca Pearls", "Egg pudding" | `Console:` <br> "Tapioca Pearls", "Egg pudding" |
 | **Program Gathers User Input for Size**| `Checked Radio:` <br> "Small" | `Console:` <br> "Small" |
 | **Program Saves a Drink Order in a Constructor**| `Checked Checkbox:` <br> "Tapioca Pearls" <br> `Checked Radio:` <br> "Small" | `Console:` <br> testDrink = {<br>toppings: ["Tapioca Pearls"], <br>size: "Small"<br>} |
-| **Program Calculates Price of a Drink Size with Toppings**| `Checked Checkbox:` <br> "Tapioca Pearls" <br> `Checked Radio:` <br> "Small" | `Console:` <br> "$3.50" |
+| **Program Applies Pricing of a Specific Drink Size with Toppings**| `Checked Checkbox:` <br> "Tapioca Pearls" <br> `Checked Radio:` <br> "Small" | `Console:` <br> "3.50" |
 | **Program Displays the Estimated Price Before Checkout"**| `Checked Checkbox:` <br> "Tapioca Pearls" <br> `Checked Radio:` <br> "Small" | "$3.50" |
 | **Program Confirms Items and Price on Checkout**| `Clicked Button:` "Checkout" | "Order Confirmation: A Small milk tea with Tapioca Pearls. Total = $3.50" |
 </details>
