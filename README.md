@@ -16,13 +16,14 @@
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **Homepage** | User accesses index.html | Homepage with user input form |
-| **Program Gathers User Input for a Topping** | `Checked Checkbox:` "Tapioca" | `Console:` "Tapioca" |
-| **Program Gathers User Input for Multiple Toppings** | `Checked Checkbox:` "Tapioca", "Egg pudding" | `Console:` "Tapioca", "Egg pudding" |
-| **Program Displays the Return Output of Toppings** | `Checked Checkbox:` "Tapioca", "Egg pudding" | "Tapioca", "Egg pudding" |
+| **Program Gathers User Input for a Topping** | `Checked Checkbox:` "Tapioca Pearls" | `Console:` "Tapioca Pearls" |
+| **Program Gathers User Input for Multiple Toppings** | `Checked Checkbox:` "Tapioca Pearls", "Egg pudding" | `Console:` "Tapioca Pearls", "Egg pudding" |
+| **Program Displays the Return Output of Toppings** | `Checked Checkbox:` "Tapioca Pearls", "Egg pudding" | "Tapioca Pearls", "Egg pudding" |
 | **Program Gathers User Input for a Size**| `Checked Radio:` "Small" | `Console:` "Small" |
 | **Program Displays the Return Output of a Size**| `Checked Radio:` "Small" | "Small" |
-| **Program Displays the Estimated Price Before Checkout"**| `Checked Checkbox:` "Tapioca" <br> `Checked Radio:` "Small" | "$3.50" |
-| **Program Confirms Items and Price on Checkout**| `Clicked Button:` "Checkout" | "Order Confirmation: A small milk tea with tapioca pearls. Total = $3.50" |
+| **Program Saves a Drink Order in a Constructor**| `Checked Checkbox:` "Tapioca Pearls" <br> `Checked Radio:` "Small" | `Console:` testDrink = {<br>toppings: ["Tapioca Pearls"], <br>size: "Small"<br>} |
+| **Program Displays the Estimated Price Before Checkout"**| `Checked Checkbox:` "Tapioca Pearls" <br> `Checked Radio:` "Small" | "$3.50" |
+| **Program Confirms Items and Price on Checkout**| `Clicked Button:` "Checkout" | "Order Confirmation: A Small milk tea with Tapioca Pearls. Total = $3.50" |
 </details>
 
 ## Setup/Installation Requirements

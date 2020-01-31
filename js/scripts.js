@@ -1,11 +1,17 @@
 // Back-end Logic --------------------
-
+function Boba(){
+  this.toppings = [];
+  this.size = "";
+}
 
 
 
 
 // Front-end Logic --------------------
-$(document).ready(function() {
+var testDrink = new Boba();
+console.log(testDrink);
+
+$(document).ready(function(){
   $("form#drinkOrder").submit(function(event){
     event.preventDefault();
     $("#output").show();
