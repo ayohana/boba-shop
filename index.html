@@ -17,59 +17,65 @@
       <p>*Please note that due to high demands, you can only order 1 drink at a time.</p>
     </div>
 
-    <!-- Form for Topping Options -->
-    <div class="container">
-      <form id="formToppings">
-        <h3>Select your toppings!</h3>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="Tapioca Pearls" id="toppingTapioca">
-          <label class="form-check-label" for="toppingTapioca">
-            Tapioca Pearls
-          </label>
+    <!-- Form for Drink Order -->
+    <div class="container p-4">
+      <form id="drinkOrder">
+        <!-- Section of Topping Options -->
+        <div class="form-group">
+          <h3>Select desired toppings:</h3>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Tapioca Pearls" id="toppingTapioca">
+            <label class="form-check-label" for="toppingTapioca">
+              Tapioca Pearls
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Egg Pudding" id="toppingEggPudding">
+            <label class="form-check-label" for="toppingEggPudding">
+              Egg Pudding
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Coffee Jelly" id="toppingCoffeeJelly">
+            <label class="form-check-label" for="toppingCoffeeJelly">
+              Coffee Jelly
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Lychee Jelly" id="toppingLycheeJelly">
+            <label class="form-check-label" for="toppingLycheeJelly">
+              Lychee Jelly
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Popping Boba" id="toppingPoppingBoba">
+            <label class="form-check-label" for="toppingPoppingBoba">
+              Popping Boba
+            </label>
+          </div>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="Egg Pudding" id="toppingEggPudding">
-          <label class="form-check-label" for="toppingEggPudding">
-            Egg Pudding
-          </label>
+
+        <!-- Section of Size Options -->
+        <div class="form-group">
+          <h3>Select your drink size:</h3>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sizeRadioOptions" id="radioSmall" value="Small">
+            <label class="form-check-label" for="radioSmall">Small (12oz)</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sizeRadioOptions" id="radioMedium" value="Medium">
+            <label class="form-check-label" for="radioMedium">Medium (16oz)</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sizeRadioOptions" id="radioLarge" value="Large">
+            <label class="form-check-label" for="radioLarge">Large (20oz)</label>
+          </div>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="Coffee Jelly" id="toppingCoffeeJelly">
-          <label class="form-check-label" for="toppingCoffeeJelly">
-            Coffee Jelly
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="Lychee Jelly" id="toppingLycheeJelly">
-          <label class="form-check-label" for="toppingLycheeJelly">
-            Lychee Jelly
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="Popping Boba" id="toppingPoppingBoba">
-          <label class="form-check-label" for="toppingPoppingBoba">
-            Popping Boba
-          </label>
-        </div>
+
       </form>
     </div>
 
-    <!-- Form for Size Options -->
-    <div class="container">
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-        <label class="form-check-label" for="inlineRadio1">1</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-        <label class="form-check-label" for="inlineRadio2">2</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-        <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
-      </div>
-    </div>
-
+    
 
   </body>
 </html>
