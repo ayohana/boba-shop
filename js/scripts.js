@@ -8,9 +8,10 @@
 $(document).ready(function() {
   $("form#drinkOrder").submit(function(event){
     event.preventDefault();
+    $("#output").show();
     $("input:checkbox[name=toppingOptions]:checked").each(function(){
       var toppingSelected = $(this).val();
-      console.log(toppingSelected);
+      $("#output").append(toppingSelected + "<br>");
     })
   });
 
