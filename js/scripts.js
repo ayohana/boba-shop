@@ -33,10 +33,16 @@ function gatherInput(drink) {
   return drink;
 }
 
+function displayOutput() {
+  $("#orderSuccess").show();
+  
+}
+
 $(document).ready(function() {
   var testDrink = new Drink();
   $("form#drinkOrder").submit(function(event) {
     console.log(gatherInput(testDrink));
+    displayOutput();
   });
   
 
