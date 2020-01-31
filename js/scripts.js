@@ -33,18 +33,17 @@ function gatherInput(drink) {
   return drink;
 }
 
-function displayOutput() {
+function displayOutput(drink) {
   $("#orderSuccess").show();
-  
+  $("#drinkItem").text("1 " + drink.size + " milk tea with " + drink.toppings.join(", "));
+  $("#totalCost").text(drink.price.toFixed(2));
 }
 
 $(document).ready(function() {
   var testDrink = new Drink();
   $("form#drinkOrder").submit(function(event) {
-    console.log(gatherInput(testDrink));
-    displayOutput();
+    gatherInput(testDrink);
+    displayOutput(testDrink);
   });
   
-
-
 });
