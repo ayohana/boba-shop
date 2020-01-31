@@ -11,6 +11,7 @@
 * $3.00 baseline boba drink price
 * +¢50 per topping (except $1 for Egg Pudding)
 * +¢50 for a Medium and +$1 for a Large
+* No additional charge for any sugar level
 
 ## Specs
 
@@ -30,6 +31,7 @@
 | **Program Displays Invalid Entry if Size Not Selected**| `Checked Checkbox:` <br> "Egg Pudding" <br> `Checked Radio:` <br> none | `Modal:` "Invalid Entry" |
 | **Program Displays No Topping Added if Toppings are Not Selected**| `Checked Checkbox:` <br> none <br> `Checked Radio:` <br> "Small" | `Modal:` "Order Confirmation: 1 Small milk tea with NO TOPPING. Total = $3.00" |
 | **Program Gathers User Input for Sugar Level**| `Checked Radio:` <br> "50%" | `Console:` <br> "50%" |
+| **Program Shows Order Confirmation of Drink Item on Checkout**| `Checked Checkbox:` <br> none <br> `Checked Radios:` <br> "Small", "100%" | `Modal:` "Order Confirmation: 1 Small milk tea with 100% Sugar + NO TOPPING. Total = $3.00" |
 
 </details>
 

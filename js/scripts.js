@@ -2,12 +2,22 @@
 function Drink() {
   this.toppings = [];
   this.size = "";
+  this.sugar = 100;
   this.price = 3;
 }
 
 Drink.prototype.assignToppings = function(selectedToppings) {
   this.addToppingCost(selectedToppings);
   this.toppings.push(selectedToppings);
+}
+
+Drink.prototype.assignSize = function(selectedSize) {
+  this.size += selectedSize;
+  this.addSizeCost();
+}
+
+Drink.prototype.assignSugar = function(selectedSugar) {
+  this.sugar = selectedSugar;
 }
 
 Drink.prototype.addToppingCost = function(topping) {
@@ -18,12 +28,7 @@ Drink.prototype.addToppingCost = function(topping) {
   }
 }
 
-Drink.prototype.assignSize = function(selectedSize) {
-  this.size += selectedSize;
-  this.checkSizeCost();
-}
-
-Drink.prototype.checkSizeCost = function() {
+Drink.prototype.addSizeCost = function() {
   if (this.size === "Medium") {
     this.price += 0.50;
   } else if (this.size === "Large") {
@@ -42,6 +47,8 @@ function gatherInput(drink) {
   })
   var sizeSelected = $("input:radio[name=sizeOptions]:checked").val();
   drink.assignSize(sizeSelected);
+  var sugarSelected = parseInt($("input:radio[name=sugarLevel]:checked").val());
+  drink.assignSugar(sugarSelected);
   return drink;
 }
 
@@ -61,6 +68,7 @@ $(document).ready(function() {
     var drink1 = new Drink();
     gatherInput(drink1);
     checkAndDisplayOutput(drink1);
+    console.log(drink1);
   });
   
 });
