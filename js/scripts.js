@@ -1,16 +1,16 @@
 // Back-end Logic --------------------
-function Boba(){
+function Drink() {
   this.toppings = [];
   this.size = "";
   this.price = 3;
 }
 
-Boba.prototype.addToppings = function(selectedToppings){
+Drink.prototype.addToppings = function(selectedToppings) {
   this.price += 0.50;
   this.toppings.push(selectedToppings);
 }
 
-Boba.prototype.addSize = function(selectedSize){
+Drink.prototype.addSize = function(selectedSize) {
   this.size += selectedSize;
   if (selectedSize === "Medium") {
     this.price += 0.50;
@@ -21,26 +21,24 @@ Boba.prototype.addSize = function(selectedSize){
   }
 }
 
-
-
-
 // Front-end Logic --------------------
-$(document).ready(function(){
-  var testDrink = new Boba();
+function gatherInput(drink) {
+  event.preventDefault();
+  $("input:checkbox[name=toppingOptions]:checked").each(function() {
+    var toppingSelected = $(this).val();
+    drink.addToppings(toppingSelected);
+  })
+  var sizeSelected = $("input:radio[name=sizeOptions]:checked").val();
+  drink.addSize(sizeSelected);
+  return drink;
+}
 
-  $("form#drinkOrder").submit(function(event){
-    event.preventDefault();
-    $("#output").show();
-    $("input:checkbox[name=toppingOptions]:checked").each(function(){
-      var toppingSelected = $(this).val();
-      testDrink.addToppings(toppingSelected);
-    })
-
-    var sizeSelected = $("input:radio[name=sizeOptions]:checked").val();
-    testDrink.addSize(sizeSelected);
-    console.log(testDrink);
-
+$(document).ready(function() {
+  var testDrink = new Drink();
+  $("form#drinkOrder").submit(function(event) {
+    console.log(gatherInput(testDrink));
   });
+  
 
 
 });
