@@ -29,6 +29,8 @@
 | **Program Applies Special Pricing for Egg Pudding Topping**| `Checked Checkbox:` <br> "Egg Pudding" <br> `Checked Radio:` <br> "Small" | `Modal:` "Order Confirmation: 1 Small milk tea with Egg Pudding. Total = $4.00" |
 | **Program Displays Invalid Entry if Size Not Selected**| `Checked Checkbox:` <br> "Egg Pudding" <br> `Checked Radio:` <br> none | `Modal:` "Invalid Entry" |
 | **Program Displays No Topping Added if Toppings are Not Selected**| `Checked Checkbox:` <br> none <br> `Checked Radio:` <br> "Small" | `Modal:` "Order Confirmation: 1 Small milk tea with NO TOPPING. Total = $3.00" |
+| **Program Gathers User Input for Sugar Level**| `Checked Radio:` <br> "50%" | `Console:` <br> "50%" |
+
 </details>
 
 ## Setup/Installation Requirements
