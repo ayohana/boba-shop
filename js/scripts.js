@@ -56,9 +56,11 @@ function checkAndDisplayOutput(drink) {
   $(".orderSuccess").show();
   $(".orderFail").hide();
   if (drink.toppings.length === 0) {
-    $("#drinkItem").text("1 " + drink.size + " milk tea with NO TOPPING");
+    $("#drinkItem").text("1 " + drink.size + " milk tea with " +
+    drink.sugar + "% Sugar + NO TOPPING");
   } else {
-    $("#drinkItem").text("1 " + drink.size + " milk tea with " + drink.toppings.join(", "));
+    $("#drinkItem").text("1 " + drink.size + " milk tea with " +
+    drink.sugar + "% Sugar + " + drink.toppings.join(", "));
   }
   $("#totalCost").text(drink.price.toFixed(2));
 }
