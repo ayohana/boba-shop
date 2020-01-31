@@ -28,6 +28,7 @@
 | **Program Shows Order Confirmation of Drink Size, Toppings and Price on Checkout**| `Clicked Button:` "Checkout" | `Modal:` "Order Confirmation: 1 Small milk tea with Tapioca Pearls. Total = $3.50" |
 | **Program Applies Special Pricing for Egg Pudding Topping**| `Checked Checkbox:` <br> "Egg Pudding" <br> `Checked Radio:` <br> "Small" | `Modal:` "Order Confirmation: 1 Small milk tea with Egg Pudding. Total = $4.00" |
 | **Program Displays Invalid Entry if Size Not Selected**| `Checked Checkbox:` <br> "Egg Pudding" <br> `Checked Radio:` <br> none | `Modal:` "Invalid Entry" |
+| **Program Displays No Topping Added if Toppings are Not Selected**| `Checked Checkbox:` <br> none <br> `Checked Radio:` <br> "Small" | `Modal:` "Order Confirmation: 1 Small milk tea with NO TOPPING. Total = $3.00" |
 </details>
 
 ## Setup/Installation Requirements
