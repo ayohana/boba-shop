@@ -25,7 +25,6 @@
 | **Program Saves a Drink Order in a Constructor**| `Checked Checkbox:` <br> "Tapioca Pearls" <br> `Checked Radio:` <br> "Small" | `Console:` <br> testDrink = {<br>toppings: ["Tapioca Pearls"], <br>size: "Small"<br>} |
 | **Program Applies Pricing of a Specific Drink Size with Toppings**| `Checked Checkbox:` <br> "Tapioca Pearls" <br> `Checked Radio:` <br> "Small" | `Console:` <br> "3.50" |
 | **Program Shows Order Confirmation of Drink Size, Toppings and Price on Checkout**| `Clicked Button:` "Checkout" | `Modal:` "Order Confirmation: A Small milk tea with Tapioca Pearls. Total = $3.50" |
-| **Program Displays the Estimated Price Before Checkout"**| `Checked Checkbox:` <br> "Tapioca Pearls" <br> `Checked Radio:` <br> "Small" | "$3.50" |
 </details>
 
 ## Setup/Installation Requirements

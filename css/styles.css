@@ -1,3 +1,25 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(29, 28, 28);
+  color: white;
+}
+
+#topHeader {
+  background-color: rgb(62, 68, 68);
+  color: white;
+}
+
+img {
+  max-width: 100px;
+}
+
+a:hover {
+  color: whitesmoke;
+}
+
 #orderSuccess {
   display: none;
 }

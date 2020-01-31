@@ -44,8 +44,8 @@ function displayOutput(drink) {
 }
 
 $(document).ready(function() {
-  var testDrink = new Drink();
   $("form#drinkOrder").submit(function(event) {
+    var testDrink = new Drink();
     gatherInput(testDrink);
     displayOutput(testDrink);
   });
