@@ -6,8 +6,9 @@
 
 ## Description
 
-**This website is for a boba (aka _bubble tea_) company.** A user can choose one or more individual toppings (tapioca pearls, coffee jelly, egg pudding, etc) and a size to order a boba drink and see the final cost. The pricing is as follows:
+**This website is for a boba (aka _bubble tea_) company.** A user can choose one or more toppings (tapioca pearls, coffee jelly, egg pudding, etc) and a size to order a boba drink and see the final cost. The pricing is listed as follows:
 
+* $3.00 baseline boba drink price
 * +¢50 per topping (except $1 for Egg Pudding)
 * +¢50 for a Medium and +$1 for a Large
 
@@ -32,7 +33,7 @@
 
 * Clone this [repository](https://github.com/ayohana/boba-shop.git/)
 * Open `index.html` in your preferred web browser.
-* _Order your boba drink!_
+* _Order your drink!_
 
 Or simply click on this [link](https://ayohana.github.io/boba-shop/) to open the web application.
 
