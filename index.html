@@ -9,11 +9,65 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
+    <!-- Top Header -->
     <div class="jumbotron">
       <h1>Welcome!</h1>
       <hr>
       <p>Our boba shop sells our <em>very</em> special all-time favorite milk tea with your choice of yummy toppings!</p>
       <p>*Please note that due to high demands, you can only order 1 drink at a time.</p>
+    </div>
+
+    <!-- Form for Topping Options -->
+    <div class="container">
+      <form id="formToppings">
+        <h3>Select your toppings!</h3>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Tapioca Pearls" id="toppingTapioca">
+          <label class="form-check-label" for="toppingTapioca">
+            Tapioca Pearls
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Egg Pudding" id="toppingEggPudding">
+          <label class="form-check-label" for="toppingEggPudding">
+            Egg Pudding
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Coffee Jelly" id="toppingCoffeeJelly">
+          <label class="form-check-label" for="toppingCoffeeJelly">
+            Coffee Jelly
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Lychee Jelly" id="toppingLycheeJelly">
+          <label class="form-check-label" for="toppingLycheeJelly">
+            Lychee Jelly
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Popping Boba" id="toppingPoppingBoba">
+          <label class="form-check-label" for="toppingPoppingBoba">
+            Popping Boba
+          </label>
+        </div>
+      </form>
+    </div>
+
+    <!-- Form for Size Options -->
+    <div class="container">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+        <label class="form-check-label" for="inlineRadio1">1</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+        <label class="form-check-label" for="inlineRadio2">2</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+        <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+      </div>
     </div>
 
 
