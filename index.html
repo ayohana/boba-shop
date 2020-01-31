@@ -12,11 +12,11 @@
     <!-- Top Header -->
     <div class="jumbotron text-center" id="topHeader">
       <h1>Welcome!</h1>
-      <img src="img/boba.png">
+      <img id="welcomeDrink" src="img/boba.png">
       <hr>
       <p>Our boba shop sells our <em>very special</em> all-time favorite milk tea with your choice of yummy toppings!</p>
       <p>*Please note that due to high demands, you can only <strong>order 1 drink at a time.</strong></p>
-      <a href="#drinkOrder"><p>Order now</p></a>
+      <p><a href="#drinkOrder">Order now</a></p>
     </div>
 
     <!-- Form for Drink Order -->
@@ -92,11 +92,12 @@
         </div>
         <div class="modal-body">
           <div id="orderSuccess">
-            <p>We've received your order:</p>
+            <p>Thanks! We've received your order:</p>
             <p><span id="drinkItem"></span></p>
             <br>
             <p>Total = $<span id="totalCost"></span></p>
           </div>
+          <img id="thankYouDrink" src="img/boba-friends.png">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
