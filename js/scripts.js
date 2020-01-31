@@ -48,7 +48,11 @@ function gatherInput(drink) {
 function checkAndDisplayOutput(drink) {
   $(".orderSuccess").show();
   $(".orderFail").hide();
-  $("#drinkItem").text("1 " + drink.size + " milk tea with " + drink.toppings.join(", "));
+  if (drink.toppings.length === 0) {
+    $("#drinkItem").text("1 " + drink.size + " milk tea with NO TOPPING");
+  } else {
+    $("#drinkItem").text("1 " + drink.size + " milk tea with " + drink.toppings.join(", "));
+  }
   $("#totalCost").text(drink.price.toFixed(2));
 }
 
