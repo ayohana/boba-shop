@@ -66,7 +66,7 @@ function checkAndDisplayOutput(drink) {
 }
 
 $(document).ready(function() {
-  $("img#welcomeDrink").slideDown(1000);
+  $("img#welcomeDrink").slideDown(2000);
 
   $("form#drinkOrder").submit(function(event) {
     var drink1 = new Drink();
