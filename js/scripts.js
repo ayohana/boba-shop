@@ -10,11 +10,15 @@ Drink.prototype.addToppings = function(selectedToppings) {
   this.toppings.push(selectedToppings);
 }
 
-Drink.prototype.addSize = function(selectedSize) {
+Drink.prototype.assignSize = function(selectedSize) {
   this.size += selectedSize;
-  if (selectedSize === "Medium") {
+  this.checkSizeCost();
+}
+
+Drink.prototype.checkSizeCost = function() {
+  if (this.size === "Medium") {
     this.price += 0.50;
-  } else if (selectedSize === "Large") {
+  } else if (this.size === "Large") {
     this.price += 1;
   } else {
     this.price = this.price;
@@ -29,7 +33,7 @@ function gatherInput(drink) {
     drink.addToppings(toppingSelected);
   })
   var sizeSelected = $("input:radio[name=sizeOptions]:checked").val();
-  drink.addSize(sizeSelected);
+  drink.assignSize(sizeSelected);
   return drink;
 }
 
