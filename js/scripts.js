@@ -1,9 +1,14 @@
 // Back-end Logic --------------------
 function Drink() {
+  this.quantity = 0;
   this.toppings = [];
   this.size = "";
   this.sugar = 100;
   this.price = 3;
+}
+
+Drink.prototype.addQuantity = function(number) {
+  this.quantity += number;
 }
 
 Drink.prototype.assignToppings = function(selectedToppings) {
@@ -41,6 +46,8 @@ Drink.prototype.addSizeCost = function() {
 // Front-end Logic --------------------
 function gatherInput(drink) {
   event.preventDefault();
+  var quantityEntered = parseInt($("#drinkQuantity").val());
+  drink.addQuantity(quantityEntered);
   $("input:checkbox[name=toppingOptions]:checked").each(function() {
     var toppingSelected = $(this).val();
     drink.assignToppings(toppingSelected);
