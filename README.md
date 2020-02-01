@@ -23,15 +23,15 @@
 | **Homepage** | User accesses index.html | Homepage with user input form |
 | **Program Gathers User Input for a Topping** | `Checked Checkbox:` <br> "Tapioca Pearls" | `Console:` <br> "Tapioca Pearls" |
 | **Program Gathers User Input for Multiple Toppings** | `Checked Checkbox:` <br> "Tapioca Pearls", "Egg pudding" | `Console:` <br> "Tapioca Pearls", "Egg pudding" |
-| **Program Gathers User Input for Size**| `Checked Radio:` <br> "Small" | `Console:` <br> "Small" |
-| **Program Saves a Drink Order in a Constructor**| `Checked Checkbox:` <br> "Tapioca Pearls" <br> `Checked Radio:` <br> "Small" | `Console:` <br> testDrink = {<br>toppings: ["Tapioca Pearls"], <br>size: "Small"<br>} |
-| **Program Applies Pricing of a Specific Drink Size with Toppings**| `Checked Checkbox:` <br> "Tapioca Pearls" <br> `Checked Radio:` <br> "Small" | `Console:` <br> "3.50" |
-| **Program Shows Order Confirmation of Drink Size, Toppings and Price on Checkout**| `Clicked Button:` "Checkout" | `Modal:` "Order Confirmation: 1 Small milk tea with Tapioca Pearls. Total = $3.50" |
-| **Program Applies Special Pricing for Egg Pudding Topping**| `Checked Checkbox:` <br> "Egg Pudding" <br> `Checked Radio:` <br> "Small" | `Modal:` "Order Confirmation: 1 Small milk tea with Egg Pudding. Total = $4.00" |
-| **Program Displays Invalid Entry if Size Not Selected**| `Checked Checkbox:` <br> "Egg Pudding" <br> `Checked Radio:` <br> none | `Modal:` "Invalid Entry" |
-| **Program Displays No Topping Added if Toppings are Not Selected**| `Checked Checkbox:` <br> none <br> `Checked Radio:` <br> "Small" | `Modal:` "Order Confirmation: 1 Small milk tea with NO TOPPING. Total = $3.00" |
-| **Program Gathers User Input for Sugar Level**| `Checked Radio:` <br> "50%" | `Console:` <br> "50%" |
-| **Program Shows Order Confirmation of Drink Item on Checkout**| `Checked Checkbox:` <br> none <br> `Checked Radios:` <br> "Small", "100%" | `Modal:` "Order Confirmation: 1 Small milk tea with 100% Sugar + NO TOPPING. Total = $3.00" |
+| **Program Gathers User Input for Size** | `Checked Radio:` <br> "Small" | `Console:` <br> "Small" |
+| **Program Saves a Drink Order in a Constructor** | `Checked Checkbox:` <br> "Tapioca Pearls" <br> `Checked Radio:` <br> "Small" | `Console:` <br> testDrink = {<br>toppings: ["Tapioca Pearls"], <br>size: "Small"<br>} |
+| **Program Applies Pricing of a Specific Drink Size with Toppings** | `Checked Checkbox:` <br> "Tapioca Pearls" <br> `Checked Radio:` <br> "Small" | `Console:` <br> "3.50" |
+| **Program Shows Order Confirmation of Drink Size, Toppings and Price on Checkout** | `Clicked Button:` "Checkout" | `Modal:` "Order Confirmation: 1 Small milk tea with Tapioca Pearls. Total = $3.50" |
+| **Program Applies Special Pricing for Egg Pudding Topping** | `Checked Checkbox:` <br> "Egg Pudding" <br> `Checked Radio:` <br> "Small" | `Modal:` "Order Confirmation: 1 Small milk tea with Egg Pudding. Total = $4.00" |
+| **Program Displays Invalid Entry if Size Not Selected** | `Checked Checkbox:` <br> "Egg Pudding" <br> `Checked Radio:` <br> none | `Modal:` "Invalid Entry" |
+| **Program Displays No Topping Added if Toppings are Not Selected** | `Checked Checkbox:` <br> none <br> `Checked Radio:` <br> "Small" | `Modal:` "Order Confirmation: 1 Small milk tea with NO TOPPING. Total = $3.00" |
+| **Program Shows Order Confirmation of Drink Size, Sugar Level, Toppings and Price on Checkout** | `Checked Checkbox:` <br> none <br> `Checked Radios:` <br> "Small", "100%" | `Modal:` "Order Confirmation: 1 Small milk tea with 100% Sugar + NO TOPPING. Total = $3.00" |
+| **Program Shows Order Confirmation of Drink Quantity, Size, Sugar Level, Toppings and Price on Checkout** | "5" <br> `Checked Checkbox:` <br> none <br> `Checked Radios:` <br> "Small", "100%" | `Modal:` "Order Confirmation: 5 Small milk tea with 100% Sugar + NO TOPPING. Total = $3.00" |
 
 </details>
 
