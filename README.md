@@ -6,6 +6,8 @@
 
 ## Description
 
+![An image of Boba Shop's Homepage](./img/homepage.JPG/)
+
 **This website is for a boba (aka _bubble tea_) company.** A user can choose one or more toppings (tapioca pearls, coffee jelly, egg pudding, etc) and a size to order a boba drink and see the final cost. The pricing is listed as follows:
 
 * $3.00 baseline boba drink price
