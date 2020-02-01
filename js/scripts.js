@@ -9,6 +9,7 @@ function Drink() {
 
 Drink.prototype.addQuantity = function(number) {
   this.quantity += number;
+  this.price *= number;
 }
 
 Drink.prototype.assignToppings = function(selectedToppings) {
@@ -46,8 +47,6 @@ Drink.prototype.addSizeCost = function() {
 // Front-end Logic --------------------
 function gatherInput(drink) {
   event.preventDefault();
-  var quantityEntered = parseInt($("#drinkQuantity").val());
-  drink.addQuantity(quantityEntered);
   $("input:checkbox[name=toppingOptions]:checked").each(function() {
     var toppingSelected = $(this).val();
     drink.assignToppings(toppingSelected);
@@ -56,6 +55,8 @@ function gatherInput(drink) {
   drink.assignSize(sizeSelected);
   var sugarSelected = parseInt($("input:radio[name=sugarLevel]:checked").val());
   drink.assignSugar(sugarSelected);
+  var quantityEntered = parseInt($("#drinkQuantity").val());
+  drink.addQuantity(quantityEntered);
   return drink;
 }
 

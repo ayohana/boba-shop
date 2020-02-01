@@ -8,7 +8,7 @@
 
 ![An image of Boba Shop's Homepage](./img/homepage.JPG/)
 
-**This website is for a boba (aka _bubble tea_) company.** A user can choose one or more toppings (tapioca pearls, coffee jelly, egg pudding, etc) and a size to order a boba drink and see the final cost. The pricing is listed as follows:
+**This website is for a boba (aka _bubble tea_) company.** A user can enter a quantity of drinks, choose none or more than one topping (tapioca pearls, coffee jelly, egg pudding, etc), a size and sugar level to order drinks and see the final cost. The pricing is listed as follows:
 
 * $3.00 baseline boba drink price
 * +¢50 per topping (except $1 for Egg Pudding)
@@ -33,7 +33,7 @@
 | **Program Displays Invalid Entry if Size Not Selected** | `Checked Checkbox:` <br> "Egg Pudding" <br> `Checked Radio:` <br> none | `Modal:` "Invalid Entry" |
 | **Program Displays No Topping Added if Toppings are Not Selected** | `Checked Checkbox:` <br> none <br> `Checked Radio:` <br> "Small" | `Modal:` "Order Confirmation: 1 Small milk tea with NO TOPPING. Total = $3.00" |
 | **Program Shows Order Confirmation of Drink Size, Sugar Level, Toppings and Price on Checkout** | `Checked Checkbox:` <br> none <br> `Checked Radios:` <br> "Small", "100%" | `Modal:` "Order Confirmation: 1 Small milk tea with 100% Sugar + NO TOPPING. Total = $3.00" |
-| **Program Shows Order Confirmation of Drink Quantity, Size, Sugar Level, Toppings and Price on Checkout** | "5" <br> `Checked Checkbox:` <br> none <br> `Checked Radios:` <br> "Small", "100%" | `Modal:` "Order Confirmation: 5 Small milk tea with 100% Sugar + NO TOPPING. Total = $3.00" |
+| **Program Shows Order Confirmation of Drink Quantity, Size, Sugar Level, Toppings and Price on Checkout** | "5" <br> `Checked Checkbox:` <br> none <br> `Checked Radios:` <br> "Small", "100%" | `Modal:` "Order Confirmation: 5 Small milk tea with 100% Sugar + NO TOPPING. Total = $15.00" |
 
 </details>
 
