@@ -1,48 +1,9 @@
-// Back-end Logic --------------------
-function Drink() {
-  this.quantity = 0;
-  this.toppings = [];
-  this.size = "";
-  this.sugar = 100;
-  this.price = 3;
-}
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
+import $ from 'jquery';
+import { Drink } from "../src/boba-shop.js";
 
-Drink.prototype.addQuantity = function(number) {
-  this.quantity += number;
-  this.price *= number;
-}
-
-Drink.prototype.assignToppings = function(selectedToppings) {
-  this.addToppingCost(selectedToppings);
-  this.toppings.push(selectedToppings);
-}
-
-Drink.prototype.assignSize = function(selectedSize) {
-  this.size += selectedSize;
-  this.addSizeCost();
-}
-
-Drink.prototype.assignSugar = function(selectedSugar) {
-  this.sugar = selectedSugar;
-}
-
-Drink.prototype.addToppingCost = function(topping) {
-  if (topping === "Egg Pudding") {
-    this.price += 1;
-  } else {
-    this.price += 0.50;
-  }
-}
-
-Drink.prototype.addSizeCost = function() {
-  if (this.size === "Medium") {
-    this.price += 0.50;
-  } else if (this.size === "Large") {
-    this.price += 1;
-  } else {
-    this.price = this.price;
-  }
-}
 
 // Front-end Logic --------------------
 function gatherInput(drink) {
@@ -74,9 +35,10 @@ function checkAndDisplayOutput(drink) {
 }
 
 $(document).ready(function() {
-  $("img#welcomeDrink").slideDown(2000);
+  $("#imgWelcomeDrink").slideDown(2000);
 
   $("form#drinkOrder").submit(function(event) {
+    event.preventDefault();
     var drink1 = new Drink();
     gatherInput(drink1);
     checkAndDisplayOutput(drink1);
